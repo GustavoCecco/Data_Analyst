@@ -1,0 +1,36 @@
+Modelo de Data Warehouse para Locadora de Carros
+
+Este repositório contém um modelo de banco de dados para uma locadora de carros, implementado em SQL. O modelo é projetado para fins de análise e oferece uma estrutura para armazenar dados relacionados a locações de carros, clientes, vendedores, carros, combustíveis, cidades e estados.
+
+Estrutura do Banco de Dados
+
+O banco de dados é chamado dw_locadora e consiste nas seguintes tabelas:
+
+Tabelas de Dimensões
+Dim_Combustivel: Armazena informações sobre os tipos de combustíveis disponíveis.
+Dim_Carro: Contém detalhes sobre os carros disponíveis para locação.
+Dim_Estado: Armazena os estados onde os clientes e vendedores estão localizados.
+Dim_Cidade: Mantém informações sobre as cidades onde os clientes estão localizados.
+Dim_Endereço: Armazena os endereços dos clientes.
+Dim_Cliente: Contém informações sobre os clientes da locadora.
+Dim_Vendedor: Mantém detalhes sobre os vendedores da locadora.
+
+Tabela de Fatos
+Fato_Locacao: Armazena dados sobre as locações de carros, incluindo informações sobre o cliente, carro, vendedor, datas de locação e entrega, quantidade de dias e valor diário da locação.
+
+Populando o Banco de Dados
+O banco de dados é populado com dados de exemplo para demonstração. As tabelas de dimensões e a tabela de fatos são preenchidas com registros de exemplo usando instruções INSERT.
+
+Visualizações (Views)
+O modelo também inclui visualizações que fornecem consultas pré-definidas para análise de dados. As visualizações incluídas são:
+
+view_locacoes_cliente: Fornece informações sobre as locações de cada cliente, incluindo detalhes do cliente, carro, vendedor e dados da locação.
+view_locacoes_carro: Apresenta informações sobre as locações de cada carro, incluindo detalhes do carro, cliente, vendedor e dados da locação.
+view_locacoes_vendedor: Oferece informações sobre as locações realizadas por cada vendedor, incluindo detalhes do vendedor, cliente, carro e dados da locação.
+
+Utilização
+Para usar o modelo de banco de dados, você pode criar um banco de dados chamado dw_locadora e executar as instruções SQL fornecidas neste repositório para criar as tabelas, inserir dados de exemplo e criar as visualizações. 
+Após a criação do banco de dados e a população das tabelas, você pode executar consultas personalizadas para análise de dados ou usar as visualizações fornecidas para obter informações específicas sobre as locações de carros.
+
+
+
