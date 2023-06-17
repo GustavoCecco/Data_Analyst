@@ -131,16 +131,7 @@ VALUES
     (8, 'Laura', 0, 8),
     (9, 'Paulo', 1, 9),
     (10, 'Luiza', 0, 10);
-    
--- Definir a variável
-SET @row := 0;
-
--- Definir a variável
-SET @row := 0;
-
-
-  `tmp_Locacao`;
-
+   
 
 
 
