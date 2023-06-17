@@ -6,14 +6,14 @@ Este repositório contém os códigos SQL para criar um banco de dados para uma 
 
 O modelo de entidade e relacionamento do banco de dados é composto pelas seguintes tabelas:
 
-tb_Cliente: Armazena informações sobre os clientes da locadora, como ID, nome e endereço.
-tb_Endereco: Armazena informações sobre os endereços dos clientes, incluindo ID, cidade e estado.
-tb_Cidade: Armazena informações sobre as cidades, como ID, nome da cidade e ID do estado.
-tb_Estado: Armazena informações sobre os estados, como ID e nome do estado.
-tb_Carro: Armazena informações sobre os carros disponíveis para locação, como ID, quilometragem, classificação, marca, modelo, ano e tipo de combustível.
-tb_Combustivel: Armazena informações sobre os tipos de combustível disponíveis, como ID e tipo de combustível.
-tb_Locacao: Armazena informações sobre as locações de carros, como ID, ID do cliente, ID do carro, data de locação, hora de locação, quantidade diária, valor diário, data de entrega, hora de entrega e ID do vendedor.
-tb_Vendedor: Armazena informações sobre os vendedores da locadora, como ID, nome, sexo e ID do estado.
+- tb_Cliente: Armazena informações sobre os clientes da locadora, como ID, nome e endereço.
+- tb_Endereco: Armazena informações sobre os endereços dos clientes, incluindo ID, cidade e estado.
+- tb_Cidade: Armazena informações sobre as cidades, como ID, nome da cidade e ID do estado.
+- tb_Estado: Armazena informações sobre os estados, como ID e nome do estado.
+- tb_Carro: Armazena informações sobre os carros disponíveis para locação, como ID, quilometragem, classificação, marca, modelo, ano e tipo de combustível.
+- tb_Combustivel: Armazena informações sobre os tipos de combustível disponíveis, como ID e tipo de combustível.
+- tb_Locacao: Armazena informações sobre as locações de carros, como ID, ID do cliente, ID do carro, data de locação, hora de locação, quantidade diária, valor diário, data de entrega, hora de entrega e ID do vendedor.
+- tb_Vendedor: Armazena informações sobre os vendedores da locadora, como ID, nome, sexo e ID do estado.
 
 ## Modelagem dimensional
 Além do modelo de entidade e relacionamento, também foi criado um modelo dimensional para o banco de dados. O modelo dimensional é composto pelas seguintes tabelas:
