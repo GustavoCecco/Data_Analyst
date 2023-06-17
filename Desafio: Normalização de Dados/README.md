@@ -34,7 +34,7 @@ Foram criadas algumas visualizações (views) para facilitar o acesso aos dados 
 ## Arquivo Power BI
 Além do banco de dados, também está disponível um arquivo do Power BI que utiliza as informações do banco de dados para criar visualizações e relatórios interativos. O arquivo do Power BI permite uma análise mais aprofundada dos dados e pode ser acessado para obter insights sobre as locações de carros.
 
-**Você pode baixar o arquivo do Power Bi para editar, ver as tabelas e medidas ou clique em Visualizar relatório abaixo.
+**Você pode baixar o arquivo do Power Bi para editar, ver as tabelas e medidas ou clique em Visualizar relatório abaixo.**
 
 [Visualizar relatório](https://app.powerbi.com/view?r=eyJrIjoiMGYxODUyMGUtZGEzNS00ZTRiLTg1OGQtODBlYWZkNWZiYjRlIiwidCI6IjBmN2MyNzgxLTJmMTItNDEzYS1hNmI4LTlhNTQ1M2I5MWFmNCJ9)
 
