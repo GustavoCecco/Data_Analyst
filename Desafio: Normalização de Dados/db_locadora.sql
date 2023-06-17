@@ -1,9 +1,13 @@
+-- Cria√ß√£o do banco de dados
+
+CREATE DATABASE db_locadora;
+USE db_locadora;
 
 ----------------------------------
 -- Criando as tabelas
 ----------------------------------
 
--- CriaÁ„o da tabela Cliente
+-- Cria√ß√£o da tabela Cliente
 CREATE TABLE tb_Cliente (
   idCliente INT PRIMARY KEY,
   nomeCliente VARCHAR(100),
@@ -11,14 +15,14 @@ CREATE TABLE tb_Cliente (
   CONSTRAINT fk_cliente_endereco FOREIGN KEY (idEndereco) REFERENCES tb_Endereco (idEndereco)
 );
 
--- CriaÁ„o da tabela Endereco
+-- Cria√ß√£o da tabela Endereco
 CREATE TABLE tb_Endereco (
   idEndereco INT PRIMARY KEY,
   idCidade INT,
   CONSTRAINT fk_endereco_cidade FOREIGN KEY (idCidade) REFERENCES tb_Cidade (idCidade)
 );
 
--- CriaÁ„o da tabela Cidade
+-- Cria√ß√£o da tabela Cidade
 CREATE TABLE tb_Cidade (
   idCidade INT PRIMARY KEY,
   cidadeCliente VARCHAR(40),
@@ -26,13 +30,13 @@ CREATE TABLE tb_Cidade (
   CONSTRAINT fk_cidade_estado FOREIGN KEY (idEstado) REFERENCES tb_Estado (idEstado)
 );
 
--- CriaÁ„o da tabela Estado
+-- Cria√ß√£o da tabela Estado
 CREATE TABLE tb_Estado (
   idEstado INT PRIMARY KEY,
   estadoCliente VARCHAR(40)
 );
 
--- CriaÁ„o da tabela Carro
+-- Cria√ß√£o da tabela Carro
 CREATE TABLE tb_Carro (
   idCarro INT PRIMARY KEY,
   kmCarro INT,
@@ -44,13 +48,13 @@ CREATE TABLE tb_Carro (
   CONSTRAINT fk_carro_combustivel FOREIGN KEY (idCombustivel) REFERENCES tb_Combustivel (idCombustivel)
 );
 
--- CriaÁ„o da tabela Combustivel
+-- Cria√ß√£o da tabela Combustivel
 CREATE TABLE tb_Combustivel (
   idCombustivel INT PRIMARY KEY,
   tipoCombustivel VARCHAR(20)
 );
 
--- CriaÁ„o da tabela Locacao
+-- Cria√ß√£o da tabela Locacao
 CREATE TABLE tb_Locacao (
   idLocacao INT PRIMARY KEY,
   idCliente INT,
@@ -67,7 +71,7 @@ CREATE TABLE tb_Locacao (
   CONSTRAINT fk_locacao_vendedor FOREIGN KEY (idVendedor) REFERENCES tb_Vendedor (idVendedor)
 );
 
--- CriaÁ„o da tabela Vendedor
+-- Cria√ß√£o da tabela Vendedor
 CREATE TABLE tb_Vendedor (
   idVendedor INT PRIMARY KEY,
   nomeVendedor VARCHAR(15),
